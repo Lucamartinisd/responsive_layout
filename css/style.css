@@ -1,0 +1,304 @@
+/* Base Styles ---------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  color: #454549;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  background-color: azure;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+header {
+  background-color: rgb(251, 251, 251);
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color:rgb(251, 251, 251);
+  border-radius: 1px;
+  margin: 0px 0px 30px auto;
+  }
+  
+  .main-nav a {
+    transition: all .5s;
+  }
+  .main-nav a:hover {
+    color: rgb(240, 126, 44);
+}
+
+.item {
+  margin: 3px;
+  padding: 9px;
+  background-color:#fff;
+} 
+
+a {
+  color: #454549;
+  text-decoration: none;
+}
+
+.profile_img {
+  max-width: 192px;
+}
+
+.intro {
+  margin: 20px 21px;
+  color: saddlebrown;
+}
+
+/* Portfolio  ---------------------- */
+#portfolio {
+  margin: 40px 0px 35px;
+}
+
+.wrapper {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.box {
+	padding: 15px;
+	margin: 5px auto;	
+  max-width: 310px;
+}
+
+.pic {
+  max-width: 290px;
+}
+
+h3 {
+  max-width: 310px;
+}
+
+.box_skills {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 300px;
+  text-align: center;
+  background:  rgb(251, 251, 251);
+  border-bottom: 4px solid rgb(95, 94, 94);
+  border-radius: 10px;
+  transition: all .5s;
+  border-top:1px solid  #ccc;
+  border-left:  2px solid #ccc;
+  border-right: 4px solid rgb(95, 94, 94);
+  margin: 50px auto;
+}
+
+.box_skills:hover:hover {
+  border-color: rgb(240, 126, 44);
+}
+
+.box_skills li {
+  border-radius: 7px;
+  display: inline-block;
+  background: #629c38;
+  color: white;
+  padding: 10px 10px;
+  margin: 2px;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #629c38;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px auto;
+  }
+  .skills li:nth-child(odd) {
+  background: #80672ea5;
+}
+
+
+/* Footer  ---------------------- */
+.main-footer {
+  background: rgb(251, 251, 251);
+  padding-top: 20px;
+}
+
+#contact {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.interest {
+  max-width: 350px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.contacts {
+  list-style: none;
+  margin: 10px 10px 0px;
+  padding:30px 0px 40px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+li {
+  margin: 20px;
+}
+
+.down {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 40px;
+}
+
+.back a {
+  transition: all .5s;
+}
+
+.back a:hover {
+  color: rgb(240, 126, 44);
+}
+
+.menu {
+  display: none;
+}
+
+
+/* Media Queries ------------------------- */
+
+/* 768px Screen ---------------------- */
+@media screen and (min-width: 768px)  {
+  h2 {
+    justify-content: center;
+    margin-bottom: 10px ;
+  }
+ 
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 0 200px ;
+    }
+    .main-nav li {
+      padding: 5px 10px 10px 10px;
+    }
+    .main-nav a {
+      transition: all .5s;
+    }
+    .main-nav a:hover {
+      color: rgb(240, 126, 44);
+  }
+
+  .item {
+    background: inherit;
+    padding: 0;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+ .profile_img {
+    margin-right: 40px;
+  }
+
+  .intro {
+    margin: 20px 40px;
+    text-align: left;
+  }
+
+  /* Portfolio  ---------------------- */
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box_skills {
+    min-width: fit-content;
+  }
+  /* Footer  ------------------------- */
+  .contacts {
+    list-style: none;
+    margin: 20px 30px 0px;
+    padding:30px 0px 40px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+
+  .interest {
+    max-width: 500px;
+    padding: 0 20px;
+    margin: auto;
+  }
+
+  .down {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .name {
+    margin-right: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .back {
+    display: none;
+  }
+
+  .menu {
+    display: inline;
+    margin: 10px 20px 10px 10px;
+  }
+  .menu a {
+    transition: all .5s;
+  }
+  .menu a:hover {
+    color: rgb(240, 126, 44);
+  }
+}
+
+
+/* 1024px Screen ---------------------- */
+@media screen and (min-width: 1024px)  {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  h2 {
+    padding: 20px 0px 0px 40px;
+    margin-right: auto;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:  space-around;
+    margin: 0 0 50px;
+  }
+    
+  .item {
+    margin: auto;
+    padding:18px 30px 0 0;
+  }
+  
+  .profile_img {
+    max-width: 320px;
+  }
+}
